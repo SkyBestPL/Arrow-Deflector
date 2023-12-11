@@ -1,0 +1,60 @@
+﻿<Page x:Class="KCK2.Menu"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:KCK2"
+      mc:Ignorable="d"
+      d:DesignHeight="830" d:DesignWidth="830"
+      Title="Menu">
+
+    <Grid>
+        <Image Source="Images/bricks.png" Stretch="Fill" />
+        <Canvas x:Name="MenuScreen" Focusable="True" Background="Transparent" KeyDown="OnKeyDown_Menu" KeyUp="OnKeyUp_Menu">
+            <Rectangle Name="Title" Canvas.Left="84" Canvas.Top="83" Fill="#FF0CFF00" Width="662" Height="182" HorizontalAlignment="Center" VerticalAlignment="Top"></Rectangle>
+            <Rectangle Name="ArrowsTop" Canvas.Top="35" Fill="#FFE0FF00" Width="990" Height="25" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Left="-160"/>
+            <Rectangle Name="ArrowsBottom" Canvas.Top="290" Fill="#FFE0FF00" Width="990" Height="25" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Left="0"/>
+            <Button Name="Graj" Canvas.Left="336" Canvas.Top="347" Click="Graj_Click" Width="158" Height="68" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Graj" BorderBrush="#FF8BDAE8" FontSize="24" FontFamily="Segoe UI Black" Background="#FF8BDAE8">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+            <Button Name="Rankingi" Canvas.Left="336" Canvas.Top="450" Click="Rankingi_Click" Width="158" Height="68" HorizontalAlignment="Center" VerticalAlignment="Top" Content="Rankingi" BorderBrush="#FF8BDAE8" FontSize="24" FontFamily="Segoe UI Black" Background="#FF8BDAE8">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+            <Button Name="Pomoc" Canvas.Left="336" Canvas.Top="552" Click="Pomoc_Click" Width="158" Height="68" HorizontalAlignment="Center" VerticalAlignment="Top" Content="Pomoc" BorderBrush="#FF8BDAE8" FontSize="24" FontFamily="Segoe UI Black" Background="#FF8BDAE8">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+            <Button Name="Wyjdz" Canvas.Left="336" Canvas.Top="657" Click="Wyjdz_Click" Width="158" Height="68" HorizontalAlignment="Center" VerticalAlignment="Top" Content="Wyjdź" BorderBrush="#FF8BDAE8" FontSize="24" FontFamily="Segoe UI Black" Background="#FF8BDAE8">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+            <Label Name="wybierzPoziom" Content="Wybierz poziom trudności, aby rozpocząć grę:" FontSize="24" FontWeight="Bold" Foreground="Black" Canvas.Left="137" Canvas.Top="282" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Segoe UI Black" />
+            <Button Name="Easy" Canvas.Left="358" Canvas.Top="347" Click="Easy_Click" Width="114" Height="68" HorizontalAlignment="Left" VerticalAlignment="Center" Content="Łatwy" BorderBrush="#FF8BDAE8" FontSize="24" FontFamily="Impact" Background="#FF8BDAE8">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+            <Button Name="Normal" Canvas.Left="358" Canvas.Top="450" Click="Normal_Click" Width="114" Height="68" HorizontalAlignment="Center" VerticalAlignment="Top" Content="Normalny" BorderBrush="#FF8BDAE8" FontSize="24" FontFamily="Impact" Background="#FF8BDAE8">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+            <Button Name="Hard" Canvas.Left="358" Canvas.Top="552" Click="Hard_Click" Width="114" Height="68" HorizontalAlignment="Center" VerticalAlignment="Top" Content="Trudny" BorderBrush="#FF8BDAE8" FontSize="24" FontFamily="Impact" Background="#FF8BDAE8">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+            <Button Name="Back" Canvas.Left="336" Canvas.Top="657" Click="Back_Click" Width="158" Height="68" HorizontalAlignment="Center" VerticalAlignment="Top" Content="Powrót" BorderBrush="#FF8BDAE8" FontSize="24" FontFamily="Segoe UI Black" Background="#FF8BDAE8">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+        </Canvas>
+    </Grid>
+</Page>
